@@ -1,0 +1,33 @@
+div#product {
+	width: 100%;
+}
+div#product .product-img img {
+	width: 38.2%;	
+	float: left;
+}
+div#product .product-info {
+	width: 61.8%;	
+	float: right;
+}
+div#product .product-info dl {
+	color: #666;
+	font-size: 13px;
+	line-height: 35px;
+}
+div#product .product-info dl dt {
+	font-weight: bold;
+	border-bottom: 1px solid #999;
+}
+div#product .product-info dl dd {
+	border-bottom: 1px dashed #999;
+}
+div#product .product-info dl dd input {
+	width: 30px;
+	text-align: center;
+}
+div#product .product-info dl dd a {
+	display: inline;
+	float: left;
+	margin: 10px 0 10px;
+	height: 36px;
+}

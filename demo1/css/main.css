@@ -1,0 +1,21 @@
+#main .main-content p {
+	margin-top: 25px;
+	font-size: 18px;
+}
+.main-content form {
+	margin-top: 20px;
+}
+.main-content form label {
+	display: block;
+	color: #555;
+	font-size: 14px;
+	padding: 20px 0 5px 0;
+}
+.main-content form input.submit {
+	border: none;
+	background: url(../images/default.png);
+	color: #fff;
+	font-weight: bold;
+	margin: 10px 140px 0 0;
+	cursor: pointer;
+}

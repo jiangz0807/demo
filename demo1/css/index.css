@@ -1,0 +1,249 @@
+/*头部开始*/
+.submit {  /*按钮的公共样式*/
+	width: 103px;
+	height: 27px;
+	text-align: center;
+	line-height: 27px;
+}
+.center {
+	margin: 0 auto;
+}
+.clr {
+	clear: both;
+}
+.clr::after {
+	content: '';
+	clear: both;
+	display: table;
+	overflow: hidden;
+}
+#header {
+	background: red;
+	height: 452px;
+	background: url(../images/top_bg.jpg) repeat-x;
+	color: #fff;
+}
+#header .center {
+	width: 980px;
+}
+#header .header-logo {
+	height: 100px;
+}
+#header .header-logo .logo {
+	display: inline-block;
+	width: 290px;
+	padding-top: 17.5px;
+	float: left;   /*ie6*/
+	margin-left: 20px;
+}
+#header .header-logo .logo span {
+	display: inline-block;
+	width: 290px;
+	height: 42px;
+	background: url(../images/logo.png);
+	_background:none; 
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="logo.png",sizingMethod="crop");
+}
+#header .header-logo .logo h1 {
+	font-size: 0.875em;	/*14px*/
+	color: #ccc;
+	text-indent: 200px;
+}
+#header .header-logo .search {
+	float: right;
+	height: 50px;
+	margin-top: 30px;
+	margin-right: 20px;
+}
+#header .search .header-text {
+	width: 180px;
+	height: 15px;
+	background: #161b1f;
+	color: #bcbcbc;
+	border: 1px solid #0b0e10;
+	padding: 5px;
+}
+#header .search .header-submit {
+	width: 80px;
+	height: 28px;
+	cursor: pointer;
+}
+
+#header .nav {
+	height: 50px;
+}
+#header .nav ul {
+	margin-left: 20px;
+}
+#header .nav ul li {
+	margin-top: 10px;
+	margin-left: 10px;
+	float: left;		/*ie6*/
+	display: inline;	/*解决边距离双倍计算的问题*/
+}
+
+#header .nav ul li a {
+	display: block;
+	font-size: 13px;
+	font-weight: bold;
+	color: black;
+	
+}
+
+#header .nav ul li a:hover {
+	background: url(../images/hover.png);
+	text-decoration: none;
+	color: #fff;
+}
+#header .banner {
+	position: relative;
+	height: 300px;
+	background: url(../images/runplay_bg.jpg);	
+}
+#header .banner .content a.banner-img {
+	position: absolute;
+	top: 50px;
+	left: 20px;
+}
+#header .banner .content dl {
+	padding-left: 400px;
+	padding-top: 50px;
+}
+#header .banner .content dl dt {
+	font-size: 24px;
+}
+#header .banner .content dl dd {
+	margin-top: 20px;
+	font-size: 16px;
+}
+#header .banner .content dl dd.submit a {
+	display: block;
+	background: url(../images/default.png);
+	color: white;
+	font-size: 13px;
+}
+#header .banner .content dl dd.submit a:hover {
+	text-decoration: none;
+	background: url(../images/d_hover.png);
+}
+/*头部结束*/
+
+/*主体部分开始*/
+#main {
+	background: url(../images/main_top_bg.jpg) repeat-x left top;
+}
+#main1 {
+	height: 100%;
+	background: url(../images/main1_bottom_bg.jpg) repeat-x left bottom;
+}
+#main1 .center {
+	width: 920px;
+	height: 900px;
+}
+#main1 .center .main-content {
+	width: 620px;
+	height: 900px;
+	float: left;
+}
+.main-content .content1 h2,
+.main-content .content2 h2,
+.main-side .content1 h2 {
+	font-size: 24px;
+	padding: 25px 0 20px;
+	font-weight: normal;
+}
+.main-content .content1 p {
+	font-size: 13px;
+	color: #555;
+}
+.main-content .content2 ul li {
+	float: left;
+	width: 270px;
+	height: 170px;
+	background: #f1f2ea;
+	border: 1px solid #d5d7ca;
+	padding: 5px;
+	margin: 0 25px 25px 0;
+}
+.main-content .content2 ul li p {
+	font-weight: bold;
+	margin-top: 10px;
+}
+.main-content a.submit {
+	display: block;
+	background: url(../images/default.png);
+	color: white;
+	font-size: 13px;
+}
+.main-content a.submit:hover {
+	background: url(../images/d_hover.png);
+	text-decoration: none;
+	color: #fff;
+}
+#main1 .center .main-side {
+	width: 240px;
+	height: 900px;
+	float: right;
+}
+.main-side .content1 h2 {
+	padding-bottom: 0;
+}
+.main-side .content1 li {
+	border-bottom: 1px dashed #ccc;
+	height: 70px;
+	margin-top: 15px;
+}
+.main-side .content1 li a {
+	color: #0074c5;
+	font-size: 13px;
+	font-weight: normal;
+	text-decoration: underline;
+}
+.main-side .content1 li a:hover {
+	color: #009900;
+}
+.main-side .content1 li p {
+	color: #555;
+	font-size: 12px;
+	line-height: 1.2;
+	margin-top: 5px;
+}
+.main-side .content2 dl {
+	margin: 40px 0 50px;
+	font-weight: bold;
+	color: #333;
+	
+	
+}
+.main-side .content2 dl dt a {
+	color: #333;
+	font-size: 24px;
+}
+.main-side .content2 dl dd {
+	font-size: 13px;
+	margin-top: 5px;
+}
+.main-side .content2 img {
+	float: right;
+	padding: 30px 30px 0 0;
+	margin-top: -130px;
+}
+/*主体部分结束*/
+#footer {
+	padding-top: 20px;
+	height: 100px;
+	background: url(../images/footer_bg.jpg) repeat-x;
+	text-align: center;
+}
+#footer p a,
+#footer p{
+	color: #fff;
+	font-size: 13px;
+	padding: 2px 10px;
+	text-decoration: underline;
+}
+
+#footer p {
+	padding-bottom: 0.5em;
+	text-decoration: none;
+}

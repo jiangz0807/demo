@@ -1,0 +1,12 @@
+@media screen and (max-width: 960px){
+	.center {
+		width: 767px;
+	}
+	#main .banner {
+		width: 767px;
+		height: 371.1px;
+	}
+	#footer img {
+		width: 767px;
+	}
+}

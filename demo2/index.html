@@ -3,8 +3,10 @@
 <head>
 	<meta charset="utf-8">
 	<title>oppo手机网站</title>
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css"> 
+	<link rel="stylesheet" type="text/css" href="css/max_960.css">
 </head>
 <body>
 <div id="header" class="center">
@@ -59,7 +61,7 @@
 				<h2>精品推荐</h2>
 				<a href="javascript:;">更多&gt;&gt;</a>
 			</div>
-			<ul class="container">
+			<ul class="container_list">
 				<li>
 					<img src="images/75_thumb_G_1364283137730.jpg" alt="goods">
 					<p><a href="javascript:;">Find 5 七彩家族系列保护壳</a></p>
@@ -87,7 +89,7 @@
 				<h2>新品上架</h2>
 				<a href="javascript:;">更多&gt;&gt;</a>
 			</div>
-			<ul class="container">
+			<ul class="container_list">
 				<li>
 					<img src="images/75_thumb_G_1364283137730.jpg" alt="goods">
 					<p><a href="javascript:;">Find 5 七彩家族系列保护壳</a></p>
@@ -124,8 +126,36 @@
 	</map>
 	<p>联系 <a href="javascript:;">jiangz0807@126.com</p>
 </div>
-<script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js">
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="js/carousel.js"></script>
+<script>
+	$(document).ready(function(){	/*使img的area坐标自适应*/
+		var areaObj = $("map").children();
+		var oldArea = [];
+		for(i=0;i<areaObj.length;i++){
+			oldArea.push(areaObj.eq(i).attr("coords"));
+		}
+		var newArea = ["10,0,70,40","100,0,215,40","235,0,354,40","374,0,492,40","513,0,615,40","633,0,750,40"];
+		$(window).resize(function(){
+			var width = $(window).width();
+			if(width >= 960){
+				for(var i=0;i<areaObj.length;i++){
+					areaObj.eq(i).attr("coords",oldArea[i]);
+				}
+			}else if(width < 960){
+				for(var i=0;i<areaObj.length;i++){
+					areaObj.eq(i).attr("coords",newArea[i]);
+				}
+			}
+			
+		});
+			
+		
+		
+		
+		
+	});
 </script>
-<script rel="stylesheet" type="text/javascript" src="js/carousel.js"></script>
 </body>
 </html>

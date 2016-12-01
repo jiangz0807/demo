@@ -113,8 +113,7 @@ body {
 	margin: 10px 0 21px;
 }
 .header-search .info {
-	margin-right: 20px;
-	width: 21%;	/*180px*/
+	width: 25%;	/*180px*/
 	float: right;
 	color: #979693;
 }
@@ -147,6 +146,11 @@ body {
 	width: 140px;
 	border: none;
 	margin: 3px 0 0 8px;
+	padding: 0;
+	font-size: 0.75em;  /*12px*/
+}
+.header-search .form-search:active {
+	border: none;
 }
 .header-search .form-submit {
 	border: none;
@@ -239,14 +243,15 @@ body {
 	color: #666;
 	font-size: 0.8125em;	/*13px*/
 }
-#main ul.content ul.container {
+#main ul.content ul.container_list {
 	margin-top: 10px;
+	padding: 0;
 	overflow: hidden;
 	zoom: 1;
 	background: url(../images/cat_tit.gif) no-repeat;
 	border-right: 1px solid #e1e1e1;
 }
-#main ul.content ul.container li {
+#main ul.content ul.container_list li {
 	float: left;
 	/*padding: 40px 39.47px 25px;	*/
 	padding-top: 40px;
@@ -258,21 +263,21 @@ body {
 	height: 320px;
 	text-align: center;
 }
-#main ul.content ul.container li img {
+#main ul.content ul.container_list li img {
 	width: 67.015%;	/*160px*/
 }
-ul.container li a,
-ul.container li p {
+ul.container_list li a,
+ul.container_list li p {
 	color: #979693;
 	font-size: 0.8125em;	/*13px*/
 	margin: 40px auto 10px;
 	width: 67.015%;	/*160px*/
 	text-align: left;
 }
-ul.container li a {
+ul.container_list li a {
 	font-size: 1em;	/*13px*/
 }
-ul.container li .price {
+ul.container_list li .price {
 	margin: 10px auto 0;
 }
 /*主体部分结束*/

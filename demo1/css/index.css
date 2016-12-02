@@ -41,8 +41,7 @@
 	width: 290px;
 	height: 42px;
 	background: url(../images/logo.png);
-	_background:none; 
-	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="logo.png",sizingMethod="crop");
+	_background: url(../images/logo.jpg);
 }
 #header .header-logo .logo h1 {
 	font-size: 0.875em;	/*14px*/
